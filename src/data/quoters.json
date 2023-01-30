@@ -1,0 +1,124 @@
+{
+    "quoters": [
+        {
+            "quoter": "Nelson Mandela",
+            "img":"images/famouspeople/Nelson_Mandela.jpg"
+        },
+        {
+            "quoter": "Walt Disney",
+            "img":"images/famouspeople/Walt_Disney.jpg"
+        },
+        {
+            "quoter": "Steve Jobs",
+            "img":"images/famouspeople/Steve_Jobs.jpg"
+        },
+        {
+            "quoter": "Mother Teresa",
+            "img":"images/famouspeople/mother_teresa.jpg"
+        },
+        {
+            "quoter": "Benjamin Franklin",
+            "img":"images/famouspeople/Benjamin_Franklin.jpg"
+        },
+        {
+            "quoter": "Abraham Lincoln",
+            "img":"images/famouspeople/Abraham_Lincoln.jpg"
+        },
+        {
+            "quoter": "Albert Einstein",
+            "img":"images/famouspeople/Albert_Einstein.jpg"
+        },
+        {
+            "quoter": "Marilyn Monroe",
+            "img":"images/famouspeople/Marilyn_Monroe.jpg"
+        },
+        {
+            "quoter": "Thomas A. Edison",
+            "img":"images/famouspeople/Thomas_Edison.jpg"
+        },
+        {
+            "quoter": "Barack Obama",
+            "img":"images/famouspeople/Barack_Obama.jpg"
+        },
+        {
+            "quoter": "Winston S. Churchill",
+            "img":"images/famouspeople/Winston_Churchill.jpg"
+        },
+        {
+            "quoter": "Socrates",
+            "img":"images/famouspeople/Socrates.jpg"
+        },
+        {
+            "quoter":"Aristotle",
+            "img":"images/famouspeople/Aristotle.jpg"
+        },
+        {
+            "quoter":"Plato",
+            "img":"images/famouspeople/Plato.jpg"
+        },
+        {
+            "quoter":"Pythagoras",
+            "img":"images/famouspeople/Pythagoras.jpg"
+        },
+        {
+            "quoter":"Mahatma Gandhi",
+            "img":"images/famouspeople/Mahatma_Gandhi.jpg"
+        },
+        {
+            "quoter": "Napoleon Bonaparte",
+            "img":"images/famouspeople/Napoleon_Bonaparte.jpg"
+        },
+        {
+            "quoter": "Alexander Graham Bell",
+            "img":"images/famouspeople/Alexander_Bell.jpg"
+        },
+        {
+            "quoter": "Sun Tzu",
+            "img":"images/famouspeople/Sun_Tzu.jpg"
+        },
+        {
+            "quoter": "Pablo Picasso",
+            "img":"images/famouspeople/Pablo_Picasso.jpg"
+        },
+        {
+            "quoter": "Bill Gates",
+            "img":"images/famouspeople/Bill_Gates.jpg"
+        },
+        {
+            "quoter": "Stephen King",
+            "img":"images/famouspeople/Stephen_King.jpg"
+        },
+        {
+            "quoter": "Jesus Christ",
+            "img":"images/famouspeople/Jesus_Christ.jpg"
+        },
+        {
+            "quoter": "John F. Kennedy",
+            "img":"images/famouspeople/JFK.jpg"
+        },
+        {
+            "quoter": "Elon Musk",
+            "img":"images/famouspeople/Elon_Musk.jpg"
+        },
+        {
+            "quoter": "George Washington",
+            "img":"images/famouspeople/George_Washington.jpg"
+        },
+        {
+            "quoter": "J.R.R. Tolkien",
+            "img":"images/famouspeople/Tolkien.jpg"
+        },
+        {
+            "quoter": "Bill Clinton",
+            "img":"images/famouspeople/Bill_Clinton.jpg"
+        },
+        {
+            "quoter": "William Shakespeare",
+            "img":"images/famouspeople/William_Shakespeare.jpg"
+        },
+        {
+            "quoter": "Theodore Roosevelt",
+            "img":"images/famouspeople/Theodore_Roosevelt.jpg"
+        }
+    ]
+}

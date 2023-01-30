@@ -1,0 +1,35 @@
+{
+"tasks":
+    [
+        {
+            "name":"Cultivate mangoes",
+            "category":"Mango business",
+            "deadline":"2023-12-12",
+            "status": true
+        },
+        {
+            "name":"Finish this site",
+            "category":"ITVITAE business",
+            "deadline":"2023-01-27", 
+            "status": false
+        },
+        {
+            "name":"Pet a dog",
+            "category":"Important business",
+            "deadline":"2023-01-24",
+            "status": false
+        },
+        {
+            "name":"Take over the world",
+            "category":"Evil business",
+            "deadline":"2023-12-31",
+            "status": false
+        },
+        {
+            "name":"Throw mangoes",
+            "category":"Mango business",
+            "deadline":"2023-12-01",
+            "status": false
+        }
+    ]
+}

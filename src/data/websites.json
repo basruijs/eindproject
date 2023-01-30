@@ -1,0 +1,30 @@
+{
+    "websites": 
+    [
+        {
+            "name":"Website 1", 
+            "url":"magnificentmagnoes.com", 
+            "image":"/images/mango.png",
+            "clicks":4
+        },
+        {
+            "name":"Gecko", 
+            "url":"https://tenor.com/search/cute-gecko-gifs", 
+            "image":"/images/gecc.jpg",
+            "clicks":18
+        },
+        {
+            "name":"Website 3", 
+            "url":"magnificentmangoes.com", 
+            "image":"/images/mango.png",
+            "clicks":2000
+        },
+        {
+            "name":"Website 4", 
+            "url":"magnificentmagnoes.com", 
+            "image":"/images/mango.png",
+            "clicks":5
+        }
+        
+    ]
+}

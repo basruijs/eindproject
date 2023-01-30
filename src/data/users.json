@@ -1,0 +1,10 @@
+{
+    "users": 
+    [
+        {
+            "name":"Mr Mango", 
+            "email":"magnificentmangoes.com@gmail.com", 
+            "avatar":"/images/mango.png"
+        }
+    ]
+}
