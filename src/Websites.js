@@ -8,26 +8,47 @@ class Websites extends React.Component{
         this.arrayMaxLength = 2;
     }
 
-    componentDidMount(){
 
-        var tempSites = this.state.websiteArray.sort((p1, p2) => (p1.clicks < p2.clicks) ? 1 : (p1.clicks > p2.clicks) ? -1 : 0);
-        while(tempSites.length > this.arrayMaxLength){
-            tempSites.pop()
-        }
-        this.setState({
-            websiteArray: tempSites
-        })
-    }
     state = {
-        websiteArray : websites.websites
+        websiteArray : websites.websites,
+        sitesArrayLong : [],
+        siteArray: []
     }
 
+    componentDidMount(){
+        var tempSites = this.state.websiteArray.sort((p1, p2) => (p1.clicks < p2.clicks) ? 1 : (p1.clicks > p2.clicks) ? -1 : 0);
+        this.setState({
+            totalSites: tempSites.length,
+            sitesArrayLong : tempSites,
+            siteArray: tempSites.slice(0, this.arrayMaxLength)
+        })
+        this.setState({})
+        console.log(this.state.sitesArrayLong)
+    }
 
     render(){
+        if(this.state.websiteArray.length > 1){
+        if(this.props.maxSites == 0){
+            return (
+            <div className="websitesLarge">
+                {              
+                    this.state.sitesArrayLong.map((website, index) =>
+                    <Website
+                        name={website.name}
+                        url={website.url}
+                        clicks={website.clicks}
+                        img={website.image}
+                        key={index.toString()}
+                    />
+                    )
+                }
+            </div>
+            );
+        } else {
         return (
             <div className="websites">
                 {
-                    this.state.websiteArray.map((website, index) =>
+                    this.state.siteArray.map((website, index) =>
                     <Website
                     name={website.name}
                     url={website.url}
@@ -39,6 +60,8 @@ class Websites extends React.Component{
                 }
             </div>
         );
+            }
+        }
     };
 }
 

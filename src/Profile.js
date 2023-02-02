@@ -34,7 +34,7 @@ class Profile extends React.Component{
                 <h4>navigation</h4>
                 <button className="navButton" onClick={(e) => this.changeNav(0, e)}>Home!</button>
                 <button className="navButton" onClick={(e) => this.changeNav(1, e)}>Tasks!</button>
-                <button className="navButton">Sites!</button>
+                <button className="navButton" onClick={(e) => this.changeNav(2, e)}>Sites!</button>
                 <button className="navButton" onClick={(e) => this.changeNav(3, e)}>Quotes!</button>
             </div>
             <Main

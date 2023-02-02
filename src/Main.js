@@ -8,7 +8,6 @@ import Quotes from "./Quotes.js"
 class Main extends React.Component {
     constructor(props) {
         super(props);
-        console.log("main " + this.props.tasks)
     }
 
     setnav(nav) {
@@ -16,7 +15,12 @@ class Main extends React.Component {
     }
     addTask(e) {
         e.preventDefault();
-        alert("add popup")
+        alert("add task popup")
+    }
+
+    addSite(e) {
+        e.preventDefault();
+        alert("add site popup")
     }
 
     render() {
@@ -30,7 +34,9 @@ class Main extends React.Component {
                             tasks={this.props.tasks}
                             size={"tasksSmall"}
                         />
-                        <Websites />
+                        <Websites 
+                            maxSites={2}
+                        />
                         <Quote />
                         <Quotes />
                     </div>
@@ -49,7 +55,16 @@ class Main extends React.Component {
                     />
                 </div>
             );
-
+        } else if (this.props.nav == 2) {
+            return (
+        <div className="main">
+            <h1>Websites</h1>
+            <button className="addTask" onClick={this.addSite} >Add site</button>
+            <Websites
+                maxSites={0}
+            />
+        </div>
+            )
         } else if (this.props.nav == 3) {
             return (
                 <div className="main">
@@ -73,6 +88,8 @@ class Main extends React.Component {
                 </div>
             );
 
+        } else {
+            <div>oops</div>
         }
     };
 }

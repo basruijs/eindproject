@@ -22,13 +22,17 @@ class Tasks extends React.Component{
     }
 
     componentDidMount(){
-        // var tempTasks = JSON.parse(JSON.stringify(this.props.tasks))
-        // var tempTasks =  {...this.props.tasks} ;
+        var completedCount = 0;
+        for (let index = 0; index < this.state.tasksArray.length; index++) {
+            const element = this.state.tasksArray[index];
+            if(element.status){
+                completedCount = completedCount + 1;
+            }
+        }
         var tempTasks = this.state.tasksArray.sort((p1, p2) => (p1.deadline > p2.deadline) ? 1 : (p1.deadline < p2.deadline) ? -1 : 0);
-        // while(tempTasks.length > this.arrayMaxLength){
-        //     tempTasks.pop()
-        // }
         this.setState({
+            totalTasks: tempTasks.length,
+            completedCount: completedCount,
             tasksArrayLong : tempTasks,
             tasksArray: tempTasks.slice(0, this.arrayMaxLength),
         })
@@ -40,22 +44,20 @@ class Tasks extends React.Component{
     handleChange(event) {
         this.setState({value: event.target.value});
         var value = document.getElementById("filter").value
-        
-        if(value=='' || value==undefined){
-            this.setState({filteredArray: this.state.tasksArrayLong.slice(0, this.arrayMaxLength)});
-        } else {
+        var completed = document.getElementById("completed").checked
+        var incompleted = document.getElementById("incompleted").checked
             var tempArray = [];
             for (let index = 0; index < this.state.tasksArrayLong.length; index++) {
                 const element = this.state.tasksArrayLong[index];
-                if(element.category==value){
+                if((element.category==value || value=='' || value==undefined) &&
+                ((element.status && completed) || (!element.status && incompleted))
+                ){
+                    console.log(element.status)
                     tempArray.push(element)
                 }
-                
             }
             this.setState({filteredArray: tempArray})
-        }
-        this.setState({})
-        console.log(value);
+        // }
         this.setState({})
 
 
@@ -66,14 +68,14 @@ class Tasks extends React.Component{
         if(this.state.tasksArray.length > 1){
         if(this.props.maxTasks == 0){
             return (
-
             <div className={this.props.size}>
+                Tasks completed: {this.state.completedCount}/{this.state.totalTasks}
                 <form>
-                Filter: <input placeholder="Category..." type="text" id="filter" name="filter" value={this.state.value} onChange={this.handleChange}></input>
+                Show completed:<input defaultChecked type="checkbox" id="completed" name="completed" onChange={this.handleChange}/>
+                Show incompleted:<input defaultChecked type="checkbox" id="incompleted" name="incompleted" onChange={this.handleChange}/>
+                Filter: <input placeholder="Category..." type="text" id="filter" name="filter" onChange={this.handleChange}></input>
                 </form>
-                {
-
-                
+                {              
                 this.state.filteredArray.map((task, index) =>
                     <Task
                     name={task.name}

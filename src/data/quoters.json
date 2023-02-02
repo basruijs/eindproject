@@ -5,10 +5,6 @@
             "img":"images/famouspeople/Nelson_Mandela.jpg"
         },
         {
-            "quoter": "Walt Disney",
-            "img":"images/famouspeople/Walt_Disney.jpg"
-        },
-        {
             "quoter": "Steve Jobs",
             "img":"images/famouspeople/Steve_Jobs.jpg"
         },
@@ -27,10 +23,6 @@
         {
             "quoter": "Albert Einstein",
             "img":"images/famouspeople/Albert_Einstein.jpg"
-        },
-        {
-            "quoter": "Marilyn Monroe",
-            "img":"images/famouspeople/Marilyn_Monroe.jpg"
         },
         {
             "quoter": "Thomas A. Edison",
@@ -77,16 +69,8 @@
             "img":"images/famouspeople/Sun_Tzu.jpg"
         },
         {
-            "quoter": "Pablo Picasso",
-            "img":"images/famouspeople/Pablo_Picasso.jpg"
-        },
-        {
             "quoter": "Bill Gates",
             "img":"images/famouspeople/Bill_Gates.jpg"
-        },
-        {
-            "quoter": "Stephen King",
-            "img":"images/famouspeople/Stephen_King.jpg"
         },
         {
             "quoter": "Jesus Christ",
@@ -105,10 +89,6 @@
             "img":"images/famouspeople/George_Washington.jpg"
         },
         {
-            "quoter": "J.R.R. Tolkien",
-            "img":"images/famouspeople/Tolkien.jpg"
-        },
-        {
             "quoter": "Bill Clinton",
             "img":"images/famouspeople/Bill_Clinton.jpg"
         },
@@ -119,6 +99,10 @@
         {
             "quoter": "Theodore Roosevelt",
             "img":"images/famouspeople/Theodore_Roosevelt.jpg"
+        },
+        {
+            "quoter": "Julius Caesar",
+            "img":"images/famouspeople/Julius.jpg"
         }
     ]
 }
