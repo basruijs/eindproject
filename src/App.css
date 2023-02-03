@@ -119,6 +119,7 @@
   height:50px;
   width:50px;
   border: 0px;
+  margin-right: 10px;
   border-radius: 10px;
 }
 .addTask:hover {
@@ -229,4 +230,48 @@
   background-color: aliceblue;
   border-radius: 100px;
 
+}
+
+.optionBar{
+  background-color: orange;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.popup {
+  position:fixed;
+  background:orange;
+  border-color: black;
+  border-style: ridge;
+  border-width: 5px;
+  border-radius: 10px;
+  padding: 10px;
+  transform: translateX(-50%) translateY(-50%);
+  top:50%;
+  left:50%;
+}
+
+.cancelButton {
+  background-color: red;
+  border: 0px;
+  border-radius: 10px;
+}
+.cancelButton:hover {
+  background-color:crimson;
+}
+
+.cancelButton:active {
+  background-color:darkred;
+}
+
+.acceptButton {
+  background-color: cyan;
+  border: 0px;
+  border-radius: 10px;
+}
+.acceptButton:hover {
+  background-color: lightseagreen;
+}
+.acceptButton:active {
+  background-color: darkcyan;
 }

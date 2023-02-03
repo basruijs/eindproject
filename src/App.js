@@ -13,8 +13,6 @@ function App() {
           <Profile 
             app={this}
           />
-
-
     </div>
   );
 }

@@ -101,6 +101,14 @@
             "img":"images/famouspeople/Theodore_Roosevelt.jpg"
         },
         {
+            "quoter": "Ludwig van Beethoven",
+            "img":"images/famouspeople/Ludwig.jpg"
+        },
+        {
+            "quoter": "Alexander the Great",
+            "img":"images/famouspeople/Alexander_the_Great.jpg"
+        },
+        {
             "quoter": "Julius Caesar",
             "img":"images/famouspeople/Julius.jpg"
         }

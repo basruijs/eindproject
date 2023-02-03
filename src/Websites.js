@@ -6,13 +6,14 @@ class Websites extends React.Component{
     constructor(props) {
         super(props);
         this.arrayMaxLength = 2;
+        this.handleChange = this.handleChange.bind(this);
     }
-
 
     state = {
         websiteArray : websites.websites,
         sitesArrayLong : [],
-        siteArray: []
+        siteArray: [],
+        sitesFiltered: []
     }
 
     componentDidMount(){
@@ -20,19 +21,38 @@ class Websites extends React.Component{
         this.setState({
             totalSites: tempSites.length,
             sitesArrayLong : tempSites,
+            sitesFiltered:tempSites,
             siteArray: tempSites.slice(0, this.arrayMaxLength)
         })
+        // this.setState({sitesFiltered: this.state.sitesArrayLong})
+
         this.setState({})
         console.log(this.state.sitesArrayLong)
     }
+
+    handleChange(event) {
+        var allsites = document.getElementById("allsites").checked
+        // var incompleted = document.getElementById("topsites").checked
+        if(allsites){
+            this.setState({sitesFiltered: this.state.sitesArrayLong})
+        } else {
+            this.setState({sitesFiltered: this.state.siteArray})
+        }
+        this.setState({})
+    }
+
 
     render(){
         if(this.state.websiteArray.length > 1){
         if(this.props.maxSites == 0){
             return (
             <div className="websitesLarge">
+                <form>
+                All sites<input defaultChecked type="radio" id="allsites" name="filter" onChange={this.handleChange}/>
+                Top sites<input type="radio" id="topsites" name="filter" onChange={this.handleChange}/>
+                </form>
                 {              
-                    this.state.sitesArrayLong.map((website, index) =>
+                    this.state.sitesFiltered.map((website, index) =>
                     <Website
                         name={website.name}
                         url={website.url}

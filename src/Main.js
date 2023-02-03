@@ -8,14 +8,11 @@ import Quotes from "./Quotes.js"
 class Main extends React.Component {
     constructor(props) {
         super(props);
+        this.nav = this.props.nav;
     }
 
     setnav(nav) {
         this.props.nav = nav;
-    }
-    addTask(e) {
-        e.preventDefault();
-        alert("add task popup")
     }
 
     addSite(e) {
@@ -46,7 +43,6 @@ class Main extends React.Component {
             return (
                 <div className="main">
                     <h1>Tasks</h1>
-                    <button className="addTask" onClick={this.addTask} >Add task</button>
 
                     <Tasks
                         maxTasks={0}

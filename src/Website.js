@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import ReactDOM from 'react-dom';
+import App from "./App";
+import Main from "./Main";
+import Profile from "./Profile";
 
 class Website extends React.Component {
     constructor(props) {
@@ -21,6 +24,7 @@ class Website extends React.Component {
 
     edit(e) {
         e.preventDefault();
+        Main.nav=0;
         alert("edit popup")
     }
     
