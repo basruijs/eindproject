@@ -55,7 +55,7 @@ class Main extends React.Component {
             return (
         <div className="main">
             <h1>Websites</h1>
-            <button className="addTask" onClick={this.addSite} >Add site</button>
+
             <Websites
                 maxSites={0}
             />
